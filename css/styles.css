@@ -1,0 +1,224 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #404bbf;
+
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --primary-white-color: #ffffff;
+  --secondary-accent-color: #4d5ae5;
+  --background-color: #f4f4fd;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/*-------------------- COMPONENTS--------------- */
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.section-description {
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+}
+
+.button-primary {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: var(--primary-white-color);
+  background: var(--secondary-accent-color);
+}
+.button-primary:hover,
+.button-primary:focus {
+  background-color: var(--accent-color);
+}
+.button-secondary {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: var(--secondary-accent-color);
+  background: var(--background-color);
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.content {
+  background-color: var(--primary-white-color);
+}
+
+/*-------------------- /COMPONENTS--------------- */
+/*------------------ HEADER--------------- */
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.logo-header {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-accent-color);
+}
+
+.accent-logo-header {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.contact-us {
+  font-style: normal;
+}
+
+.contact-us-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contact-us-link:hover,
+.contact-us-link:focus {
+  color: var(--accent-color);
+}
+
+/*------------------ /HEADER--------------- */
+
+/*-------------------- HERO--------------- */
+
+.hero {
+  background-color: var(--secondary-text-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-white-color);
+}
+
+/*-------------------- /HERO--------------- */
+
+/*-------------------- WHAT ARE WE DOING--------------- */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--secondary-text-color);
+}
+/*-------------------- /WHAT ARE WE DOING--------------- */
+
+/*-------------------- OUR TEAM--------------- */
+
+.our-team {
+  background-color: var(--background-color);
+}
+/*-------------------- /OUR TEAM--------------- */
+
+/*-------------------- FOOTER--------------- */
+
+.footer {
+  background-color: var(--secondary-text-color);
+}
+.footer-description {
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-color);
+}
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-accent-color);
+}
+.accent-logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
