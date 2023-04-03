@@ -8,6 +8,7 @@
   --primary-white-color: #ffffff;
   --secondary-accent-color: #4d5ae5;
   --background-color: #f4f4fd;
+  --border-color: #e7e9fc;
 }
 h1,
 h2,
@@ -27,6 +28,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 button {
@@ -46,6 +48,11 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   width: 1470px;
   margin-left: auto;
@@ -56,6 +63,7 @@ body {
 
 /*-------------------- COMPONENTS--------------- */
 .subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -71,6 +79,11 @@ body {
 }
 
 .button-primary {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -88,6 +101,12 @@ body {
   background-color: var(--accent-color);
 }
 .button-secondary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -116,6 +135,7 @@ body {
 .page-header {
   padding-top: 25.5px;
   padding-bottom: 25.5px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .page-header-container {
@@ -231,6 +251,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 
   color: var(--secondary-text-color);
 }
@@ -241,7 +262,50 @@ body {
 .our-team {
   background-color: var(--background-color);
 }
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.content {
+  flex-basis: calc(100% / 4 - 72px);
+  border-radius: 0px 0px 4px 4px;
+}
+.employees-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 /*-------------------- /OUR TEAM--------------- */
+
+/*-------------------- OUR JOBS--------------- */
+/* .top-line-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 24px;
+  } */
+
+.our-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.our-jobs-content {
+  flex-basis: calc(100% / 3 - 72px);
+  border: 1px solid #e7e9fc;
+}
+
+.our-jobs-wrapper {
+  border: 1px solid #e7e9fc;
+}
+
+/*-------------------- /OUR JOBS--------------- */
 
 /*-------------------- FOOTER--------------- */
 
