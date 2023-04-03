@@ -88,10 +88,12 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  border: 1px solid transparent;
 
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  margin: 0 auto;
 
   color: var(--primary-white-color);
   background: var(--secondary-accent-color);
@@ -226,21 +228,37 @@ body {
 /*-------------------- HERO--------------- */
 
 .hero {
+  text-align: center;
   background-color: var(--secondary-text-color);
 }
 
 .hero-title {
+  padding-top: 188px;
+  margin-bottom: 48px;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
 
   text-align: center;
   letter-spacing: 0.02em;
+  display: inline-block;
 
   color: var(--primary-white-color);
 }
 
 /*-------------------- /HERO--------------- */
+/*-------------------- FEATURES--------------- */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features-content {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+/*-------------------- /FEATURES--------------- */
 
 /*-------------------- WHAT ARE WE DOING--------------- */
 .section-title {
@@ -299,11 +317,11 @@ body {
 
 .our-jobs-content {
   flex-basis: calc((100% - 72px) / 3);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
 }
 
 .our-jobs-wrapper {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
 }
 
 /*-------------------- /OUR JOBS--------------- */
