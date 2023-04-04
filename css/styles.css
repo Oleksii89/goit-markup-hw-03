@@ -93,7 +93,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   border: none;
-  margin: auto;
+  margin: 0 auto;
 
   letter-spacing: 0.04em;
 
@@ -251,10 +251,10 @@ body {
 
 .features-list {
   display: flex;
+  gap: 24px;
 }
 .feature-content {
-  margin-right: 24px;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /*-------------------- /FEATURES--------------- */
@@ -274,12 +274,10 @@ body {
 }
 .examples-content {
   display: flex;
+  gap: 24px;
 }
 .pictures {
-  margin-right: 24px;
-}
-.examples-content:not(:last-child) {
-  margin-right: 24px;
+  flex-basis: calc((100% - 72px) / 3);
 }
 
 /*-------------------- /WHAT ARE WE DOING--------------- */
