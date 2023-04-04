@@ -252,11 +252,13 @@ body {
 
 .features-list {
   display: flex;
-  gap: 24px;
 }
-.features-content {
+.features-list .feature-content :not(:last-child) {
+  margin-right: 24px;
+}
+/* .features-content {
   flex-basis: calc((100% - 72px) / 4);
-}
+} */
 
 /*-------------------- /FEATURES--------------- */
 
@@ -272,6 +274,12 @@ body {
   margin-bottom: 72px;
 
   color: var(--secondary-text-color);
+}
+.examples-content {
+  display: flex;
+}
+.examples-content :not(:last-child) {
+  margin-right: 24px;
 }
 /*-------------------- /WHAT ARE WE DOING--------------- */
 
@@ -301,44 +309,47 @@ body {
 /*-------------------- /OUR TEAM--------------- */
 
 /*-------------------- OUR JOBS--------------- */
-/* .top-line-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12px 24px;
-  } */
+.top-line-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  justify-content: center;
+}
+.top-line-buttons :not(:last-child) {
+  margin-right: 24px;
+}
 
 .our-jobs {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+
+  padding-bottom: 120px;
 }
 
-.our-jobs-content {
+/* .our-jobs-content {
   flex-basis: calc((100% - 72px) / 3);
   border: 1px solid var(--border-color);
 }
 
 .our-jobs-wrapper {
   border: 1px solid var(--border-color);
-}
+} */
 
 /*-------------------- /OUR JOBS--------------- */
 
 /*-------------------- FOOTER--------------- */
 
 .footer {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+
   background-color: var(--secondary-text-color);
 }
-.footer-description {
-  line-height: 1.5;
 
-  letter-spacing: 0.02em;
-
-  color: var(--background-color);
-}
 .logo-footer {
+  padding-bottom: 17.5px;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 800;
@@ -351,6 +362,14 @@ body {
   text-transform: uppercase;
 
   color: var(--secondary-accent-color);
+}
+.footer-description {
+  width: 264px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-color);
 }
 .accent-logo-footer {
   font-family: Raleway, sans-serif;
