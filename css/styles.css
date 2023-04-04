@@ -80,6 +80,7 @@ body {
 
 .button-primary {
   display: block;
+  margin: 0 auto;
 
   padding-top: 16px;
   padding-bottom: 16px;
@@ -93,7 +94,6 @@ body {
   font-weight: 500;
   line-height: 1.5;
   border: none;
-  margin: 0 auto;
 
   letter-spacing: 0.04em;
 
@@ -277,7 +277,7 @@ body {
   gap: 24px;
 }
 .pictures {
-  flex-basis: calc((100% - 72px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /*-------------------- /WHAT ARE WE DOING--------------- */
@@ -295,7 +295,6 @@ body {
 }
 .content {
   flex-basis: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
 }
 .employees-wrapper {
   display: flex;
@@ -304,6 +303,15 @@ body {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+.name-surname {
+  text-align: center;
+}
+.position {
+  text-align: center;
 }
 /*-------------------- /OUR TEAM--------------- */
 
