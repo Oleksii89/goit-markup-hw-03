@@ -80,7 +80,7 @@ body {
 
 .button-primary {
   display: block;
-  margin: 0 auto;
+
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
@@ -93,6 +93,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   border: none;
+  margin: 0 auto;
 
   letter-spacing: 0.04em;
 
@@ -259,8 +260,9 @@ body {
 .features-list {
   display: flex;
 }
-.features-list .feature-content :not(:last-child) {
+.feature-content {
   margin-right: 24px;
+  flex-basis: calc((100% -72px) / 4);
 }
 
 /*-------------------- /FEATURES--------------- */
