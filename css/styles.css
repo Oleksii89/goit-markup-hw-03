@@ -146,10 +146,13 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .menu {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-list {
@@ -169,6 +172,11 @@ body {
 .menu-link:focus {
   color: var(--accent-color);
 }
+
+.menu-item {
+  margin-right: 40px;
+}
+
 .logo {
   margin-right: 76px;
 }
@@ -188,6 +196,7 @@ body {
 }
 
 .accent-logo-header {
+  margin-right: 76px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -199,10 +208,6 @@ body {
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .contact-us {
