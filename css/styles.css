@@ -33,7 +33,6 @@ img {
 
 button {
   cursor: pointer;
-  margin: 0 auto;
 }
 .list {
   list-style: none;
@@ -94,6 +93,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   border: none;
+  margin: auto;
 
   letter-spacing: 0.04em;
 
@@ -246,13 +246,6 @@ body {
 
   color: var(--primary-white-color);
 }
-/* .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-} */
 
 /*-------------------- /HERO--------------- */
 /*-------------------- FEATURES--------------- */
@@ -262,7 +255,7 @@ body {
 }
 .feature-content {
   margin-right: 24px;
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 /*-------------------- /FEATURES--------------- */
