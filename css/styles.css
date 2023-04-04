@@ -217,7 +217,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  /* margin-right: 40px; */
 }
 
 .contact-us-link:hover,
@@ -276,9 +275,10 @@ body {
 .examples-content {
   display: flex;
 }
-.examples-content :not(:last-child) {
+.pictures {
   margin-right: 24px;
 }
+
 /*-------------------- /WHAT ARE WE DOING--------------- */
 
 /*-------------------- OUR TEAM--------------- */
