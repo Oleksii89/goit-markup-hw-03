@@ -61,6 +61,20 @@ body {
   padding-right: 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*-------------------- COMPONENTS--------------- */
 .subtitle {
   margin-bottom: 8px;
@@ -138,15 +152,14 @@ body {
 /*-------------------- /COMPONENTS--------------- */
 /*------------------ HEADER--------------- */
 .page-header {
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
   border-bottom: 1px solid var(--border-color);
 }
 
 .page-header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .page-nav {
   display: flex;
@@ -157,7 +170,7 @@ body {
   display: flex;
   align-items: center;
 }
-.menu-item {
+.menu-item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -191,17 +204,6 @@ body {
 }
 
 .accent-logo-header {
-  margin-right: 76px;
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--secondary-text-color);
 }
 
@@ -261,6 +263,11 @@ body {
 /*-------------------- /FEATURES--------------- */
 
 /*-------------------- WHAT ARE WE DOING--------------- */
+
+.work {
+  padding-top: 0;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -298,10 +305,6 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 .employees-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -319,9 +322,7 @@ body {
 /*-------------------- OUR JOBS--------------- */
 .section-portfolio {
   padding-top: 96px;
-  padding-bottom: 96px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-bottom: 120px;
 }
 
 .top-line-buttons {
@@ -337,8 +338,6 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-
-  padding-bottom: 120px;
 }
 
 .our-jobs-content {
@@ -389,14 +388,5 @@ body {
   color: var(--background-color);
 }
 .accent-logo-footer {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--background-color);
 }
